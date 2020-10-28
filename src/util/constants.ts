@@ -1,0 +1,7 @@
+export const REQUEST_TRANSFER = '@pi:app:transfer:request'
+export const TRANSFER_RESPONSE = '@pi:app:transfer:response'
+export const AUTH_ERROR = '@pi:app:error:auth'
+export const UNAUTHORIZED_REQUEST = '@pi:app:error:unauthorized'
+export const UNKNOWN_ERROR = '@pi:app:error:unknown'
+export const OPEN_APP_CONVERSATION = '@pi:app:conversation:open'
+export const OPEN_SHARE_DIALOG_ACTION = '@pi:app:share_dialog:open'
