@@ -6,4 +6,4 @@ import {
 } from './classes/PiNetworkInstance'
 
 export const PiNetworkClient = new PiNetworkInstance()
-export { User, TransferRequest, BalanceResponse }
+export { BalanceResponse, TransferRequest, User }

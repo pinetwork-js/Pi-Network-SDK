@@ -26,7 +26,8 @@ module.exports = {
     'object-shorthand': ['error', 'always', { avoidQuotes: true }],
 
     /* Sorting */
-    'simple-import-sort/sort': 'error'
+    'simple-import-sort/imports': 'error',
+    'simple-import-sort/exports': 'error'
   },
   globals: { Atomics: 'readonly', SharedArrayBuffer: 'readonly' },
   overrides: [
@@ -68,7 +69,8 @@ module.exports = {
         /**
          * Sorting
          */
-        'simple-import-sort/sort': 'error',
+        'simple-import-sort/imports': 'error',
+        'simple-import-sort/exports': 'error',
 
         /**
          * TSDoc
