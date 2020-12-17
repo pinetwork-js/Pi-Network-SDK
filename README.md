@@ -24,4 +24,4 @@ npm install pi-network-sdk
 ## 📖 Documentation
 
 - Official [documentation](https://developers.minepi.com/doc/javascript) from the Pi Network Core Team
-- Package [documentation](https://enderdragonneau.github.io/Pi-Network-SDK/)
+- Package [documentation](https://enderdragonneau.github.io/Pi-Network-SDK/globals.html)
