@@ -1,6 +1,6 @@
 # Deprecated: Pi-Network-SDK
 
-**Important:** This repository is no longer maintained and pi-network-sdk will not receive any future updates. There is an actively maintained fork of this project available at https://github.com/PiNetwork-js/sdk and published on npm as @pinetwork-js/sdk.
+**Important:** This repository is no longer maintained and pi-network-sdk will not receive any future updates. There is an actively maintained fork of this project available at https://github.com/pinetwork-js/sdk and published on npm as @pinetwork-js/sdk.
 
 > Unofficial Pi Network SDK
 
