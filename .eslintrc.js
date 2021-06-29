@@ -11,6 +11,9 @@ module.exports = {
 		'plugin:import/warnings',
 		'plugin:import/typescript',
 	],
+	parserOptions: {
+		project: "tsconfig.json",
+	},
 	rules: {
 		quotes: 'off',
 		'@typescript-eslint/quotes': [
