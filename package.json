@@ -1,56 +1,54 @@
 {
-  "name": "pi-network-sdk",
-  "version": "1.0.0",
-  "description": "Unofficial Pi Network SDK",
-  "keywords": [
+	"name": "pi-network-sdk",
+	"description": "Unofficial Pi Network SDK",
+	"version": "1.0.0",
+	"main": "build/index.js",
+  "typings": "typing/index.d.ts",
+	"scripts": {
+		"prepack": "yarn build",
+		"build": "rimraf build && tsc",
+		"lint": "eslint src --ext ts",
+		"lint-fix": "yarn lint --fix",
+		"format": "prettier . --write",
+    "docs": "typedoc && touch ./docs/.nojekyll"
+	},
+	"author": "Brewal Derouet",
+	"license": "MIT",
+	"repository": {
+    "type": "git",
+    "url": "git+https://github.com/B-Derouet/Pi-Network-SDK.git"
+  },
+	"homepage": "https://github.com/B-Derouet/Pi-Network-SDK#readme",
+	"bugs": {
+    "url": "https://github.com/B-Derouet/Pi-Network-SDK/issues"
+  },
+	"dependencies": {
+    "axios": "^0.21.1"
+  },
+  "devDependencies": {
+    "@microsoft/tsdoc": "^0.13.2",
+    "@typescript-eslint/eslint-plugin": "^4.28.1",
+    "@typescript-eslint/parser": "^4.28.1",
+    "eslint": "^7.29.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "eslint-plugin-sonarjs": "^0.8.0-125",
+    "eslint-plugin-tsdoc": "^0.2.14",
+    "prettier": "^2.3.2",
+    "rimraf": "^3.0.2",
+    "typedoc": "^0.21.2",
+    "typescript": "^4.3.4"
+  },
+	"files": [
+    "build",
+    "typing/index.d.ts"
+  ],
+	"keywords": [
     "pi",
     "Pi Network",
     "sdk",
     "minepi"
-  ],
-  "homepage": "https://github.com/EnderDragonneau/Pi-Network-SDK#readme",
-  "bugs": {
-    "url": "https://github.com/EnderDragonneau/Pi-Network-SDK/issues"
-  },
-  "author": "EnderDragonneau",
-  "files": [
-    "dist/**/*",
-    "typing/index.d.ts"
-  ],
-  "main": "dist/index.js",
-  "typings": "typing/index.d.ts",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/EnderDragonneau/Pi-Network-SDK.git"
-  },
-  "scripts": {
-    "build": "yarn clean && yarn tsc -p .",
-    "docs": "yarn typedoc && touch ./docs/.nojekyll",
-    "test": "yarn lint",
-    "lint": "yarn eslint \"src/**/*.ts\"",
-    "lint:fix": "yarn eslint --fix \"src/**/*.ts\"",
-    "format": "yarn prettier --write \"src/**/*.ts\"",
-    "clean": "yarn rimraf dist && yarn rimraf tsconfig.tsbuildinfo",
-    "precommit": "yarn format && yarn lint",
-    "prepublishOnly": "yarn build && yarn pack"
-  },
-  "dependencies": {
-    "axios": "^0.21.0"
-  },
-  "devDependencies": {
-    "@microsoft/tsdoc": "^0.12.24",
-    "@typescript-eslint/eslint-plugin": "^4.10.0",
-    "@typescript-eslint/parser": "^4.10.0",
-    "eslint": "^7.15.0",
-    "eslint-config-prettier": "^7.0.0",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-prettier": "^3.3.0",
-    "eslint-plugin-simple-import-sort": "^7.0.0",
-    "eslint-plugin-sonarjs": "^0.5.0",
-    "eslint-plugin-tsdoc": "^0.2.10",
-    "prettier": "^2.2.1",
-    "rimraf": "^3.0.2",
-    "typedoc": "^0.19.2",
-    "typescript": "^4.1.3"
-  }
+  ]
 }
